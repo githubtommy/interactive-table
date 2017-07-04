@@ -1,0 +1,119 @@
+.app {
+  font-family: sans-serif;
+  font-style: normal;
+  font-size: 12px;
+  letter-spacing: normal;
+  color: black;
+}
+
+/*
+* links
+*/
+
+a:link {
+    color: black;
+    text-decoration: underline !important;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: blue !important;
+}
+
+a:active {
+    color: black;
+}
+
+/*
+* search bar
+*/
+
+.searchBar {
+  position: relative;
+  background: #F2F2F2;
+  color: black;
+  padding: 10px;
+  margin: 0;
+  height: 70px;
+  width: 100%;
+}
+
+/* vertically center, left align the label/selectd widget */
+.searchBar-inner {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 20px;
+  text-align:left;
+  vertical-align: middle;
+}
+
+.searchBar-label {
+  padding-right: 10px;
+}
+
+.searchBar select {
+  width: 200px;
+}
+
+/*
+* request table
+*/
+
+.requestTable {
+  width: 100%;
+  margin-left: 10px;
+  border: none;
+  border-collapse: collapse;
+}
+
+.requestTable th {
+  margin-top: 100px;
+  padding: 30px 0px 15px 10px;
+  background-color: white;
+  font-weight: normal;
+  border-bottom: 1px black solid;
+  text-align: left;
+}
+
+.requestTable td {
+  text-align: left;
+  padding: 2px 0px 2px 10px;
+}
+
+.requestTable tbody tr {
+  border-bottom-color: white;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+}
+
+.requestTable tr:hover td {
+  background: #FCF;
+}
+
+/* white space between table head and table body */
+.requestTable tbody:before {
+    content: "-";
+    display: block;
+    line-height: 8px;
+    color: transparent;
+}
+
+/*
+* status dropdown in table cell
+* appear as text link (i.e. no button chrome)
+*/
+.statusDropdown {
+     background:none !important;
+     color:inherit;
+     border:none !important;
+     padding:0 !important;
+     font: inherit;
+     cursor: pointer;
+     text-decoration: underline;
+     outline: none;
+     -webkit-appearance: none;
+}
